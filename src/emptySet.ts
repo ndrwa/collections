@@ -1,1 +1,4 @@
-export const emptySet = () => new Set();
+export const emptySet = () => {
+  console.log('Empty Set');
+  return new Set();
+};
