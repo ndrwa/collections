@@ -1,0 +1,41 @@
+{
+  "name": "@ndrwa/collections",
+  "version": "1.0.6",
+  "description": "Collections",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "release-package": "npm run build && npx changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndrwa/collections.git"
+  },
+  "author": "Andrii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndrwa/collections/issues"
+  },
+  "homepage": "https://github.com/ndrwa/collections#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "rollup": "^4.54.0",
+    "rollup-plugin-delete": "^3.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.9.3"
+  }
+}
